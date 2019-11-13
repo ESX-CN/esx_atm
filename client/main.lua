@@ -139,3 +139,8 @@ AddEventHandler('onResourceStop', function(resource)
 		end
 	end
 end)
+
+RegisterNetEvent('esx:showAtmNotification')
+AddEventHandler('esx:showAtmNotification',function(msg, ...)
+	ESX.ShowNotification(_U(msg, ...))
+end)
